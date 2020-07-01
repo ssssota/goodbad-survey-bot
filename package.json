@@ -1,0 +1,23 @@
+{
+  "name": "goodbad-survey-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index",
+  "scripts": {
+    "tsc:init": "tsc --init",
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch",
+    "start": "node -r dotenv/config dist/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dbsc": "^1.0.3",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.14",
+    "typescript": "^3.9.5"
+  }
+}
