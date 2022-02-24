@@ -1,23 +1,32 @@
 {
   "name": "goodbad-survey-bot",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
-  "main": "dist/index",
+  "main": "index.js",
   "scripts": {
-    "tsc:init": "tsc --init",
-    "tsc": "tsc",
-    "tsc:watch": "tsc --watch",
-    "start": "node -r dotenv/config dist/index"
+    "build": "tsc",
+    "start": "node -r dotenv/config dist/index.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssssota/goodbad-survey-bot.git"
+  },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssssota/goodbad-survey-bot/issues"
+  },
+  "homepage": "https://github.com/ssssota/goodbad-survey-bot#readme",
   "dependencies": {
-    "dbsc": "^1.0.3",
-    "dotenv": "^8.2.0"
+    "@discordjs/builders": "^0.12.0",
+    "@discordjs/rest": "^0.3.0",
+    "discord-api-types": "^0.27.3",
+    "discord.js": "^13.6.0"
   },
   "devDependencies": {
-    "@types/node": "^14.0.14",
-    "typescript": "^3.9.5"
-  }
+    "dotenv": "^16.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  },
+  "type": "module"
 }
